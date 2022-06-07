@@ -1,0 +1,84 @@
+.titreNews{
+   
+    overflow:hidden;
+    white-space:nowrap;
+   display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10%; 
+    
+    
+  }
+  
+  .titreNews:first-of-type {    /* For increasing performance 
+      ID/Class should've been used. 
+      For a small demo 
+      it's okaish for now */
+  animation: showup 7s infinite;
+  }
+  
+  .titreNews:last-of-type {
+  width:0px;
+  
+  animation: reveal 7s infinite;
+  }
+  
+  .titreNews:last-of-type span {
+  margin-left:-355px;
+  animation: slidein 7s infinite;
+  }
+  
+  @keyframes showup {
+  0% {opacity:0;}
+  20% {opacity:1;}
+  80% {opacity:1;}
+  100% {opacity:0;}
+  }
+  
+  @keyframes slidein {
+  0% { margin-left:-800px; color:#a55265;;}
+  20% { margin-left:-800px;}
+  35% { margin-left:0px; }
+  100% { margin-left:0px;  }
+  }
+  
+  @keyframes reveal {
+  0% {opacity:0;width:0px;}
+  20% {opacity:1;width:0px;}
+  30% {width:100%;}
+  80% {opacity:1;}
+  100% {opacity:0;width:355px;}
+  }
+  
+  .imageNews{
+    
+      border-radius: 8px;
+      margin-top: 7%;
+      margin-bottom: 5%;
+      background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+  }
+  
+  .container {
+      
+      text-align: center;
+      padding: 10px 20px;
+     
+     
+  }
+  .profilPhotos{
+    float: left;
+    height: 300px;
+    display: block;
+    margin-left: 35%;
+     margin-top:12%;
+    width:25%;
+    border: 4px solid #c1a7b3;
+    border-radius: 100%;
+    box-shadow: #ecdce9 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  .photos{
+      height:  100%;
+      width: 100%;
+      border-radius: 100%;
+  }
